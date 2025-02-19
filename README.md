@@ -27,7 +27,7 @@ I am proficient in the following programming languages and technologies:
 
 ## 📫 Contact
 
-Feel free to reach out to me via my [contact page](./contact.html) for collaboration opportunities, questions, or just to connect!
+Feel free to reach out to me via my [contact page](.(https://saiperam.github.io/Portfolio-Website/contact.html)) for collaboration opportunities, questions, or just to connect!
 
 Thank you for visiting my portfolio!
 
