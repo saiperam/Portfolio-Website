@@ -16,7 +16,7 @@ My portfolio features various projects that span different domains such as AI, R
   
 ## 📜 Resume
 
-You can view and download my most up-to-date resume in the **[Resume Section](./assets/Resume.pdf)**.
+You can view and download my most up-to-date resume in the **[Resume Section](./assets/resume/Sai-Peram-Resume.pdf)**.
 
 ## 🌱 Skills & Technologies
 
