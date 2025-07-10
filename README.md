@@ -14,9 +14,9 @@ My portfolio features various projects that span different domains such as AI, R
 - **[Navigator-NOVA](https://github.com/saiperam/Navigator-NOVA-Undergraduate-Research-)**: A self-driving vehicle software stack developed as part of the **NOVA** undergraduate research team.
 - **[SpeakWise](https://github.com/saiperam/SpeakWise)**: An app that helps individuals improve their public speaking and interview preparation.
   
-## 📜 Resume
+## 📜 CV
 
-You can view and download my most up-to-date resume in the **[Resume Section](./assets/cv_file/Sai_Peram_CV.pdf)**.
+You can view and download my most up-to-date CV in the **[CV Section](./assets/cv_file/Sai_Peram_CV.pdf)**.
 
 ## 🌱 Skills & Technologies
 
