@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This site showcases my journey in soft
 
 ## 💼 About Me
 
-I'm a passionate **Computer Engineering** student at **The University of Texas at Dallas** with a deep interest in **Artificial Intelligence**, **Machine Learning**, and **Robotics**. I am constantly looking for opportunities to learn, grow, and contribute to innovative projects.
+I'm a passionate **Electrical and Computer Engineering** student at **The University of Texas at Austin** with a deep interest in **Artificial Intelligence**, **Machine Learning**, and **Robotics**. I am constantly looking for opportunities to learn, grow, and contribute to innovative projects.
 
 ## 📂 Projects
 
