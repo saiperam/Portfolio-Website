@@ -1,66 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research work by Sai Peram in surgical robotics, autonomous vehicles, and drone swarms.">
+  <title>Research | Sai Peram</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script defer src="src/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Research</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="industry.html">Industry Experience</a>
-            <a href="academic.html">Academic Involvement</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Sai Peram<span>AI/ML &amp; Robotics Specialist</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="industry.html">Experience</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="academic.html">Leadership</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      </nav>
+    </div>
+  </header>
 
-    <main>
+  <main>
+    <section class="section experience-section">
+      <div class="experience-intro reveal-on-scroll">
+        <p class="eyebrow">Research</p>
+        <h1>Engineering intelligent systems for robotics and autonomy.</h1>
+        <p>
+          Applied research in robot control, multi-agent coordination, and GPU-accelerated perception, designed around real constraints such as safety, latency, uncertainty, and sim-to-real transfer.
+        </p>
+      </div>
 
-        <section>
-            <h2>Surgical Robotics at The ARTS Lab</h2>
-            <p>
-                <strong>Surgical Robotics Researcher</strong> · 
-                <em><a href="https://sites.utexas.edu/arts-lab/" target="_blank">The Advanced Robotic Technologies for Surgery (ARTS) Lab</a></em> · 
-                Texas Robotics<br>
-            </p>
-            <p>
-                Conducting research on robotic surgical systems with integration through <strong>ROS2</strong> and <strong>Gazebo</strong>. 
-                My focus is on enhancing robotic motion planning, simulation, and control strategies for advancing surgical robotics capabilities.
-            </p>
-        </section>
-        
-        <section>
-            <h2>Autonomous Vehicle Systems at NOVA</h2>
-            <p><strong>AV Perception and Planning Researcher</strong> · <em> NOVA: Self-Driving Research Lab</em> · UT Dallas<br>
-            <p>I am an active member of the NOVA research group, which focuses on advancing autonomous driving technologies. As part of this program, we have developed a fully functional vehicle prototype, equipped with cutting-edge sensors, AI-driven systems, and advanced algorithms for real-world autonomous navigation.</p>
-            <p>Our work aims to push the boundaries of autonomous vehicle research, leveraging deep learning, robotics, and state-of-the-art machine learning techniques to solve complex problems in the field.</p>
-            <p><span style="color: #d4af37;">GitHub:</span> <a href="https://github.com/Nova-UTD/navigator.git" target="_blank">https://github.com/Nova-UTD/navigator.git</a></p>
-        </section>
-
-        <section>
-            <h3 style="color: #d4af37;">Brake Light Detection</h3>            <p>One of my key contributions to the NOVA program is the development of a brake light detection system. This system utilizes YOLOv8, a state-of-the-art object detection model, to identify and classify braking behaviors of vehicles in real-time. By integrating this with ROS2, we aim to enhance the decision-making capabilities of our autonomous vehicle prototype.</p>
-            <div class="brake-light-images">
-                <img src="assets\images\brake1.png" alt="Annotated Brake Light Detection - Example 1" style="max-width: 45%; margin: 10px;">
-                <img src="assets\images\brake2.png" alt="Annotated Brake Light Detection - Example 2" style="max-width: 45%; margin: 10px;">
-                <p class="citation">
-                    <em>Base images and dataset courtesy of IM Lab, Kookmin University via Roboflow Universe, licensed under 
-                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. Annotations created using YOLOv8 by Sai Peram.</em><br>
-                    <strong>Dataset link:</strong> 
-                    <a href="https://universe.roboflow.com/imlab-kookmin-univ/brake-light-detection" target="_blank">
-                        Brake-Light-Detection Dataset
-                    </a>
-                </p>
+      <div class="timeline experience-list">
+        <article class="timeline-item experience-card featured-experience reveal-on-scroll">
+          <div class="timeline-meta">
+            <strong><a class="organization-link" href="https://sites.utexas.edu/arts-lab/" target="_blank" rel="noreferrer">Advanced Robotic Technologies for Surgery (ARTS) Lab, Texas Robotics</a></strong>
+            <span>Aug 2025 - Present</span>
+            <span class="experience-location">Austin, Texas</span>
+          </div>
+          <div class="experience-content">
+            <div class="role-header">
+              <p class="role-kicker">Robot Control and Motion Planning</p>
+              <h2>Surgical Robotics Researcher</h2>
             </div>
-        </section>
-    </main>
+            <ul class="impact-list">
+              <li><strong>Safety-aware control:</strong> Developing collision-resistant, fault-tolerant, and singularity-aware control software for Franka Emika robots using Python and C++ ROS2 nodes.</li>
+              <li><strong>Simulation validation:</strong> Building regression tests to evaluate motion-planning behavior before physical deployment.</li>
+              <li><strong>Reusable robotics tooling:</strong> Published SE3Kit on PyPI, providing modular APIs for SE(3) transformations, rotations, and simulation workflows.</li>
+              <li><strong>Depth stabilization for endoscopic perception:</strong> Developing camera-calibration and OpenCV pipelines in Python and ROS2, containerized with Docker for deployment on NVIDIA Jetson AGX Thor.</li>
+              <li><strong>Spinal pedicle fixation planning:</strong> Building trajectory-planning workflows with Python and OpenGL using synthetic datasets and domain randomization for robust surgical guidance.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>ROS2</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Isaac Sim</li>
+              <li>OpenCV</li>
+              <li>Docker</li>
+              <li>Jetson AGX Thor</li>
+              <li>OpenGL</li>
+              <li>Domain Randomization</li>
+            </ul>
+          </div>
+        </article>
 
-    <footer>
-        <p>&copy; 2025 Sai Peram</p>
-    </footer>
+        <article class="timeline-item experience-card reveal-on-scroll">
+          <div class="timeline-meta">
+            <strong><a class="organization-link" href="https://texasaerialrobotics.wixsite.com/website" target="_blank" rel="noreferrer">Texas Aerial Robotics</a></strong>
+            <span>Feb 2026 - Present</span>
+            <span class="experience-location">Austin, Texas</span>
+          </div>
+          <div class="experience-content">
+            <div class="role-header">
+              <p class="role-kicker">Multi-Agent Autonomy</p>
+              <h2>Swarm Robotics Engineer</h2>
+            </div>
+            <ul class="impact-list">
+              <li><strong>35% lower end-to-end latency:</strong> Optimized ROS2 and RViz2 simulation workflows for faster perception-to-control execution.</li>
+              <li><strong>Decentralized coordination:</strong> Engineering drone-swarm perception and control pipelines for reinforcement learning and multi-agent decision-making.</li>
+              <li><strong>Performance benchmarking:</strong> Evaluating coordination strategies against latency, scalability, and simulation reliability constraints.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>Drone swarms</li>
+              <li>Reinforcement learning</li>
+              <li>RViz2</li>
+              <li>Multi-agent systems</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item experience-card research-showcase reveal-on-scroll">
+          <div class="timeline-meta">
+            <strong><a class="organization-link" href="https://nova-utd.github.io/" target="_blank" rel="noreferrer">NOVA Self-Driving Research Lab</a></strong>
+            <span>Aug 2024 - May 2025</span>
+            <span class="experience-location">Richardson, Texas</span>
+          </div>
+          <div class="experience-content">
+            <div class="role-header">
+              <p class="role-kicker">Perception and Autonomous Systems</p>
+              <h2>Autonomous Vehicle Engineer</h2>
+            </div>
+            <ul class="impact-list">
+              <li><strong>Greater than 85% detection accuracy:</strong> Integrated YOLOv8 brake-light perception with CUDA-accelerated, cuDNN-optimized inference on Ubuntu Linux and Docker.</li>
+              <li><strong>Real-time 3D perception:</strong> Processed distributed LiDAR telemetry through ROS2 and voxel-grid data structures for efficient point-cloud workflows.</li>
+              <li><strong>Sim-to-real forecasting:</strong> Developed RNN-based fleet strategies and time-series experiments in CARLA for autonomous driving scenarios.</li>
+              <li><strong>Dynamic occupancy-grid prediction:</strong> Built LSTM and Scene Transformer temporal models to forecast fused LiDAR and RADAR occupancy grids 5, 10, and 15 seconds ahead, deployed as modular Python ROS2 nodes and containerized with Docker.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>YOLOv8</li>
+              <li>CUDA</li>
+              <li>LiDAR</li>
+              <li>RADAR</li>
+              <li>ROS2</li>
+              <li>Python</li>
+              <li>Computer Vision</li>
+              <li>CARLA</li>
+              <li>Robot Simulation</li>
+              <li>Docker</li>
+            </ul>
+            <div class="research-media">
+              <figure>
+                <img src="assets/images/brake1.png" alt="YOLOv8 brake light detection annotation example 1">
+                <figcaption>Brake-light perception output</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/brake2.png" alt="YOLOv8 brake light detection annotation example 2">
+                <figcaption>GPU-accelerated detection results</figcaption>
+              </figure>
+              <p class="citation">
+                Dataset courtesy of IM Lab, Kookmin University via Roboflow Universe under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>. YOLOv8 annotations by Sai Peram. <a href="https://universe.roboflow.com/imlab-kookmin-univ/brake-light-detection" target="_blank" rel="noreferrer">View dataset</a>.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <span>&copy; 2026 Sai Peram</span>
+      <span>Research in robotics, perception, and autonomy</span>
+    </div>
+  </footer>
 </body>
 </html>

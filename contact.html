@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sai Peram for software engineering, AI, robotics, and new grad opportunities.">
+  <title>Contact | Sai Peram</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script defer src="src/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research</a>
-            <a href="industry.html">Industry Experience</a>
-            <a href="academic.html">Academic Involvement</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Sai Peram<span>AI/ML &amp; Robotics Specialist</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="industry.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="academic.html">Leadership</a>
+        <a class="active" href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      </nav>
+    </div>
+  </header>
 
-        </nav>
-    </header>
+  <main>
+    <section class="contact-hero">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Interested in building intelligent systems across AI, robotics, and large-scale software engineering.</h1>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:sai11.peram@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <section class="contact-info">
-            <h2>Let's Connect!</h2>
-            <p>Email: <a href="mailto:sai11.peram@gmail.com">sai11.peram@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sai-peram" target="_blank">www.linkedin.com/in/sai-peram</a></p>
-            <p>GitHub: <a href="https://github.com/saiperam" target="_blank">www.github.com/saiperam</a></p>
-            <p>Resume: <a href="assets/resume/SaiPeramResume.pdf" download>Download My Resume</a></p>
-        </section>
-    </main>
+    <section class="section reveal-on-scroll">
+      <div class="contact-grid contact-links">
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">📄</span>
+          <strong>Resume</strong>
+          <a class="button contact-action" href="assets/resume/SaiPeramResume.pdf" download>Download Resume</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">💼</span>
+          <strong>LinkedIn</strong>
+          <a class="button contact-action" href="https://www.linkedin.com/in/sai-peram" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">💻</span>
+          <strong>GitHub</strong>
+          <a class="button contact-action" href="https://github.com/saiperam" target="_blank" rel="noreferrer">View Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Sai Peram</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <span>&copy; 2026 Sai Peram</span>
+      <span>Austin, TX</span>
+    </div>
+  </footer>
 </body>
 </html>

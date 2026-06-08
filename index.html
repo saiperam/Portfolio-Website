@@ -1,38 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sai Peram - UT Austin ECE student building AI, robotics, autonomous systems, and cloud software.">
+  <title>Sai Peram | AI, Robotics, and Software Engineering</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script defer src="src/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research</a>
-            <a href="industry.html">Industry Experience</a>
-            <a href="academic.html">Academic Involvement</a>
-            <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Sai Peram<span>AI/ML &amp; Robotics Specialist</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="industry.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="academic.html">Leadership</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      </nav>
+    </div>
+  </header>
 
-        </nav>
-    </header>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">AI engineering - robotics - autonomous systems</p>
+        <h1>I build intelligent systems that <span class="accent-text">perceive</span>, <span class="accent-text">reason</span>, and <span class="accent-text">act</span> in the real world.</h1>
+        <p class="lead">
+        Engineering the future of autonomy through machine learning, robotics, and large-scale AI systems.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="assets/resume/SaiPeramResume.pdf">View resume</a>
+          <a class="button" href="industry.html">See experience</a>
+          <a class="button" href="projects.html">Explore projects</a>
+        </div>
+      </div>
 
-    <main>
-        <section>
-            <h2>Hello, I'm Sai Peram!</h2>
-            <img src="assets/images/profile1.jpg" alt="Sai Peram" class="profile-image">
-            <p>I’m a current undergraduate student studying Electrical & Computer Engineering at UT Austin passionate about AI in autonomous driving, surgical robotics, and academic leadership. Explore my work!</p>
+      <aside class="portrait-panel" aria-label="Profile summary">
+        <img src="assets/images/profile1.jpg" alt="Sai Peram" class="profile-image hero-headshot">
+        <div class="portrait-caption">
+          <strong>Sai Peram</strong>
+          <span>AI/ML & Robotics Specialist</span>
+        </div>
+      </aside>
+    </section>
 
-        </section>
-    </main>
+    <section class="section">
+      <div class="section-intro">
+        <h2>Passionate about applying AI, machine learning, and robotics to solve real-world engineering challenges across healthcare, self-driving transportation, and enterprise solutions.</h2>
+      </div>
+      <div class="grid feature-grid">
+        <article class="card feature-card">
+          <div class="card-heading"><span class="mini-icon" aria-hidden="true">🧠</span><h3>Applied AI Engineering</h3></div>
+          <p>Building production-grade AI systems spanning computer vision, generative AI, machine learning infrastructure, and cloud deployment.</p>
+        </article>
+        <article class="card feature-card">
+          <div class="card-heading"><span class="mini-icon" aria-hidden="true">🤖</span><h3>Robotics and Autonomy</h3></div>
+          <p>Advancing autonomous decision-making through surgical robotics, autonomous vehicles, drone swarms, and intelligent control systems.</p>
+        </article>
+        <article class="card feature-card">
+          <div class="card-heading"><span class="mini-icon" aria-hidden="true">🔬</span><h3>Research and Innovation</h3></div>
+          <p>Conducting research at the intersection of machine learning, perception, and robotics to solve high-impact engineering challenges.</p>
+        </article>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Sai Peram</p>
-    </footer>
+    <section class="section reveal-on-scroll">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Education</p>
+        </div>
+      </div>
+      <div class="grid two">
+        <article class="card education-card reveal-on-scroll">
+          <div class="card-heading"><span class="mini-icon" aria-hidden="true">🎓</span><h3>The University of Texas at Austin</h3></div>
+          <p><strong>B.S. Electrical and Computer Engineering, Minor in Robotics</strong><br>August 2025 - May 2027</p>
+          <ul class="detail-list">
+            <li>University Honors List</li>
+            <li>Coursework: Software Engineering and Design Lab, Operating Systems, Applied Statistics, Data Science Laboratory, and Software Design for Intelligent Systems</li>
+          </ul>
+        </article>
+        <article class="card education-card reveal-on-scroll">
+          <div class="card-heading"><span class="mini-icon" aria-hidden="true">💻</span><h3>The University of Texas at Dallas</h3></div>
+          <p><strong>B.S. Computer Engineering</strong><br>August 2023 - May 2025</p>
+          <ul class="detail-list">
+            <li>GPA: 4.000</li>
+            <li>Dean's List</li>
+            <li>Coursework: Data Structures and Algorithms, Software Engineering, Computer Science, Discrete Math, Linear Algebra, Digital Circuits, and Digital Systems</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-   
+    <section class="section reveal-on-scroll">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Certifications</p>
+        </div>
+      </div>
+      <ul class="quick-list">
+        <li>DeepLearning.AI and AWS Generative AI with LLMs</li>
+        <li>Microsoft Azure AI Fundamentals</li>
+        <li>Google AI Essentials</li>
+        <li>Mobile Application Development - University of Waterloo</li>
+        <li>Java Programming - University of Waterloo</li>
+        <li>Cisco IT Essentials</li>
+      </ul>
+    </section>
+
+    <section class="section reveal-on-scroll">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Core technologies</p>
+        </div>
+      </div>
+      <ul class="quick-list">
+        <li>Python</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>TypeScript</li>
+        <li>ROS2</li>
+        <li>CUDA</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>AWS</li>
+        <li>GCP</li>
+        <li>PyTorch</li>
+        <li>TensorFlow</li>
+        <li>OpenCV</li>
+        <li>SQL</li>
+        <li>MATLAB</li>
+        <li>Git</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <span>&copy; 2026 Sai Peram</span>
+      <span>AI, robotics, and software engineering portfolio</span>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,79 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technical projects by Sai Peram in medical imaging AI, finance AI, and speech analysis.">
+  <title>Projects | Sai Peram</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script defer src="src/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Sai Peram<span>AI/ML &amp; Robotics Specialist</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="industry.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="academic.html">Leadership</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      </nav>
+    </div>
+  </header>
 
-            <a href="about.html">About Me</a>
-            <a href="research.html">Research</a>
-            <a href="industry.html">Industry Experience</a>
-            <a href="academic.html">Academic Involvement</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <section class="section experience-section">
+      <div class="experience-intro reveal-on-scroll">
+        <p class="eyebrow">Selected Projects</p>
+        <h1>Intelligent systems built from research to deployment.</h1>
+        <p>
+          Robotics infrastructure, reusable developer tools, and applied AI products spanning motion planning, geometric computing, healthcare, finance, and speech systems.
+        </p>
+      </div>
 
-    <main>
-        <section class="projects-list">
-            <!-- Project 1: Medvisor -->
-            <div class="project">
-                <div class="project-description" style="text-align: center;">
-                    <h3>MedVisor</h3>
-                    <p style="color: #ff4c4c; font-weight: bold;">1st Place Finalist for AIM Night, Fall 2024</p>
-                    <p>MedVisor is an AI-powered solution developed to detect and classify lumbar spine degenerative diseases from MRI scans using advanced deep learning techniques: U-Net for disc segmentation and a ResNet-50 for disease classification.</p>
-                    <p><a href="https://www.canva.com/design/DAGXEjQsyBM/PHL_PEaRWnNSYV0wBeaC_w/edit?utm_content=DAGXEjQsyBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Presentation</a></p>
-                    <p><a href="https://github.com/LoveBhusal/AIM-MedVisor.git">GitHub</a></p>
-
-                </div>
-                
-                <div class="project-image">
-                    <img src="assets/images/Spine1.png" alt="Medvisor Project">
-                    <img src="assets/images/Spine2.png" alt="Medvisor Project">
-
-                </div>
+      <div class="project-list">
+        <article class="project project-card featured-project reveal-on-scroll">
+          <div class="project-description">
+            <div class="project-meta">
+              <span class="project-number">01</span>
             </div>
-
-           <!-- Project 2: QuadCore -->
-            <div class="project">
-                <div class="project-description">
-                    <h3>QuadCore</h3>
-                    <p>QuadCore is an AI-powered financial application designed to revolutionize personal finance management. Featuring four advanced AI models, it empowers users with a personalized budget advisor, secure transaction monitoring, a financial chatbot, and a stock investment analyzer. From budgeting to investments, QuadCore leverages cutting-edge technology like Linear Regression, Random Forest Classifiers, and DistilGPT to deliver real-time insights, detect anomalies, and provide expert financial advice at your fingertips.</p>
-                    <p><a href="https://1drv.ms/p/c/3510b8fa682429d0/EdApJGj6uBAggDV0AAAAAAABSd7NM5W2EY8xivqiHNIJ4w?e=IISORW">Presentation</a></p>
-                    <p><a href="https://github.com/saiperam/QuadCore.git">GitHub</a></p>
-                </div>
-                <div class="project-image">
-                    <img src="assets/images/quadcore.png" alt="QuadCore Project">
-                </div>
+            <p class="role-kicker">Motion Planning and Robot Control</p>
+            <h2>Franka Emika Manipulator Motion Planning</h2>
+            <p>
+              Built a fully simulated motion-planning framework for the Franka Emika FP3 manipulator using ROS2 Humble, MoveIt2, Python, and C++. The system supports Cartesian task-space trajectory generation, interactive pose goals, smooth execution, and real-time collision and singularity monitoring, with an architecture designed for future physical-hardware deployment.
+            </p>
+            <ul class="tag-list">
+              <li>ROS2 Humble</li>
+              <li>MoveIt2</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Motion Planning</li>
+              <li>Collision Monitoring</li>
+            </ul>
+            <div class="inline-actions">
+              <a class="button project-link" href="https://github.com/saiperam/Franka-FP3-Motion-Planner-Simulation.git" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
             </div>
+          </div>
+          <div class="project-image project-media franka-media">
+            <figure>
+              <img class="franka-project-image" src="assets/images/projects/franka/franka-motion-planning.png" alt="Franka Emika FP3 manipulator motion-planning simulation">
+            </figure>
+          </div>
+        </article>
 
-
-            <!-- Project 2 -->
-            <div class="project">
-                <div class="project-description">
-                    <h3>SpeakWise</h3>
-                    <p>I built the backend for SpeakWise, an app that improves public speaking by providing real-time feedback using Firebase authentication and OpenAI’s language model. The app leveraged NLP and speech recognition 
-                        for sentiment analysis, refining users’ delivery while ensuring scalability and performance.</p>
-                        <p><a href="https://www.canva.com/design/DAGCC700gMU/UuFVhm_u9kxwl18oJX_yFw/view?utm_content=DAGCC700gMU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3bf307d4b2">Presentation</a></p>
-                        <p><a href="https://github.com/acm-projects/SpeakWise.git">GitHub</a></p>
-                    </div>
-                <div class="project-image">
-                    <img src="assets/images/phone.jpg" alt="Project 2">
-                </div>
+        <article class="project project-card reveal-on-scroll">
+          <div class="project-description">
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <span class="project-award">Install from PyPI</span>
             </div>
+            <p class="role-kicker">Open-Source Robotics Infrastructure</p>
+            <h2>SE3Kit</h2>
+            <p>
+              Co-authored a high-performance Python library for SE(3) transformations, kinematic chains, ROS interoperability, and 3D geometric computing. Implemented rotation and transformation utilities, intuitive geometric APIs, ROS 1/2 compatibility, and unit-tested workflows validated with RViz2, Gazebo, and CARLA.
+            </p>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>SE(3)</li>
+              <li>ROS 1/2</li>
+              <li>Robotics Kinematics</li>
+              <li>PyPI</li>
+              <li>Unit Testing</li>
+            </ul>
+            <div class="inline-actions">
+              <a class="button project-link" href="https://github.com/saiperam/SE3Kit.git" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+              <a class="button project-link" href="https://pypi.org/project/se3kit/" target="_blank" rel="noreferrer">View PyPI <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-technical-panel" aria-label="SE3Kit library capabilities">
+            <div class="technical-mark">SE(3)</div>
+            <div>
+              <p class="role-kicker">Robotics Geometry Toolkit</p>
+              <h3>Transform. Rotate. Integrate.</h3>
+              <p>Production-ready geometric computing for robot kinematics, simulation, and autonomous systems.</p>
+            </div>
+            <div class="technical-stack">
+              <span>Euler</span>
+              <span>Quaternion</span>
+              <span>Rotation Matrix</span>
+              <span>ROS Geometry</span>
+            </div>
+          </div>
+        </article>
 
-            <!-- Add more projects as needed -->
-        </section>
-    </main>
+        <article class="project project-card reveal-on-scroll">
+          <div class="project-description">
+            <div class="project-meta">
+              <span class="project-number">03</span>
+            </div>
+            <p class="role-kicker">Clinical AI Platform</p>
+            <h2>OptiClarity</h2>
+            <p>
+              AI-driven clinical platform for analyzing OCT, fundus, slit-lamp, and corneal-topography scans with an ensemble of ResNet-50, InceptionV3, and EfficientNetB3 models. OptiClarity integrates a LangChain RAG assistant, FastAPI services, patient triage, and conflict-free scheduling into a unified React interface for ophthalmology workflows.
+            </p>
+            <ul class="tag-list">
+              <li>Deep Learning</li>
+              <li>Computer Vision</li>
+              <li>LangChain</li>
+              <li>RAG</li>
+              <li>FastAPI</li>
+              <li>React</li>
+              <li>OpenCV</li>
+            </ul>
+            <div class="inline-actions">
+              <a class="button project-link" href="https://github.com/saiperam/AIM-OptiClarity.git" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-image project-media opticlarity-media">
+            <figure>
+              <img class="contain-image" src="assets/images/projects/opticlarity/opticlarity-dashboard.png" alt="OptiClarity AI-powered eye health analysis interface">
+              <figcaption>AI-powered eye health platform</figcaption>
+            </figure>
+          </div>
+        </article>
 
-    <footer>
-        <p>&copy; 2025 Sai Peram</p>
-    </footer>
+        <article class="project project-card reveal-on-scroll">
+          <div class="project-description">
+            <div class="project-meta">
+              <span class="project-number">04</span>
+              <span class="project-award">1st Place Recognition</span>
+            </div>
+            <p class="role-kicker">Medical Imaging AI</p>
+            <h2>MedVisor</h2>
+            <p>
+              AI diagnostics tool for lumbar spine degenerative disease detection using MRI scans, U-Net segmentation, and ResNet-50 classification. Built with PyTorch, scikit-learn, Pandas, and TensorFlow for the Artificial Intelligence Society.
+            </p>
+            <ul class="tag-list">
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>U-Net</li>
+              <li>ResNet-50</li>
+              <li>Medical imaging</li>
+            </ul>
+            <div class="inline-actions">
+              <a class="button project-link" href="https://www.canva.com/design/DAGXEjQsyBM/PHL_PEaRWnNSYV0wBeaC_w/edit?utm_content=DAGXEjQsyBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noreferrer">View presentation <span aria-hidden="true">↗</span></a>
+              <a class="button project-link" href="https://github.com/LoveBhusal/AIM-MedVisor.git" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="image-grid project-media">
+            <figure>
+              <img class="contain-image" src="assets/images/Spine1.png" alt="MedVisor MRI segmentation interface">
+              <figcaption>MRI segmentation interface</figcaption>
+            </figure>
+            <figure>
+              <img class="contain-image" src="assets/images/Spine2.png" alt="MedVisor MRI diagnostic results">
+              <figcaption>Diagnostic model output</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="project project-card reveal-on-scroll">
+          <div class="project-description">
+            <div class="project-meta">
+              <span class="project-number">05</span>
+              <span class="project-award">HackTX 2025</span>
+            </div>
+            <p class="role-kicker">Agentic AI and Financial Intelligence</p>
+            <h2>CARTA</h2>
+            <p>
+              AI-powered vehicle financing platform that extracts salary, income, tax, and credit signals from financial documents with Google Gemini, then applies a Keras sequential model to recommend personalized Toyota financing or leasing plans. CARTA also explains decisions conversationally, sends Gmail summaries, schedules Google Calendar reminders, and visualizes vehicles and payment impact through Three.js.
+            </p>
+            <ul class="tag-list">
+              <li>Gemini API</li>
+              <li>Keras</li>
+              <li>Next.js</li>
+              <li>FastAPI</li>
+              <li>Three.js</li>
+              <li>Tailwind CSS</li>
+              <li>Google Workspace</li>
+            </ul>
+            <div class="inline-actions">
+              <a class="button project-link" href="https://github.com/saiperam/CARTA-HackTX-Fall2025.git" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-image project-media carta-media">
+            <figure>
+              <img class="contain-image" src="assets/images/projects/carta/carta-dashboard.jpeg" alt="CARTA Toyota vehicle financing interface">
+              <figcaption>Interactive Toyota financing experience</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="project project-card reveal-on-scroll">
+          <div class="project-description">
+            <div class="project-meta">
+              <span class="project-number">06</span>
+            </div>
+            <p class="role-kicker">AI Finance Assistant</p>
+            <h2>QuadCore</h2>
+            <p>
+              Personal finance application with four AI models for budget advising, transaction monitoring, financial chatbot support, and stock investment analysis. Used model approaches including linear regression, random forests, and DistilGPT-style language modeling.
+            </p>
+            <ul class="tag-list">
+              <li>Machine learning</li>
+              <li>Financial analytics</li>
+              <li>Anomaly detection</li>
+              <li>Chatbot</li>
+            </ul>
+            <div class="inline-actions">
+              <a class="button project-link" href="https://1drv.ms/p/c/3510b8fa682429d0/EdApJGj6uBAggDV0AAAAAAABSd7NM5W2EY8xivqiHNIJ4w?e=IISORW" target="_blank" rel="noreferrer">View presentation <span aria-hidden="true">↗</span></a>
+              <a class="button project-link" href="https://github.com/saiperam/QuadCore.git" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-image project-media">
+            <figure>
+              <img src="assets/images/quadcore.png" alt="QuadCore finance AI project dashboard">
+              <figcaption>Financial intelligence dashboard</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="project project-card reveal-on-scroll">
+          <div class="project-description">
+            <div class="project-meta">
+              <span class="project-number">07</span>
+            </div>
+            <p class="role-kicker">Speech AI and Backend Systems</p>
+            <h2>SpeakWise</h2>
+            <p>
+              Backend for a public speaking feedback application using Firebase authentication, OpenAI language model integration, NLP, and speech recognition to support sentiment analysis and delivery feedback.
+            </p>
+            <ul class="tag-list">
+              <li>Firebase</li>
+              <li>OpenAI API</li>
+              <li>NLP</li>
+              <li>Backend engineering</li>
+            </ul>
+            <div class="inline-actions">
+              <a class="button project-link" href="https://www.canva.com/design/DAGCC700gMU/UuFVhm_u9kxwl18oJX_yFw/view?utm_content=DAGCC700gMU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3bf307d4b2" target="_blank" rel="noreferrer">View presentation <span aria-hidden="true">↗</span></a>
+              <a class="button project-link" href="https://github.com/acm-projects/SpeakWise.git" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-image project-media">
+            <figure>
+              <img src="assets/images/phone.jpg" alt="SpeakWise mobile application preview">
+              <figcaption>Mobile speech-coaching experience</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <span>&copy; 2026 Sai Peram</span>
+      <span>Selected technical projects</span>
+    </div>
+  </footer>
 </body>
 </html>

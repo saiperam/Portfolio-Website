@@ -1,46 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Sai Peram, UT Austin ECE student focused on AI, robotics, and software systems.">
+  <title>About | Sai Peram</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script defer src="src/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research</a>
-            <a href="industry.html">Industry Experience</a>
-            <a href="academic.html">Academic Involvement</a>
-            <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Sai Peram<span>AI/ML &amp; Robotics Specialist</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="industry.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="academic.html">Leadership</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      </nav>
+    </div>
+  </header>
 
-        </nav>
-    </header>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">About</p>
+        <h1>Engineer with a systems mindset and an AI research edge.</h1>
+        <p class="lead">
+          I study Electrical and Computer Engineering at UT Austin and focus on the intersection of intelligent software, robotics, and infrastructure. I am especially interested in work where strong fundamentals matter: perception, motion planning, distributed systems, AI tooling, embedded systems, and cloud-native engineering.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="contact.html">Get in touch</a>
+          <a class="button" href="assets/resume/SaiPeramResume.pdf">Resume</a>
+        </div>
+      </div>
+      <aside class="portrait-panel">
+        <img src="assets/images/lift.jpg" alt="Sai Peram outdoors" class="profile-image">
+        <div class="portrait-caption">
+          <strong>Grounded, technical, ambitious.</strong>
+          <span>Building toward full-time new grad roles starting after May 2027.</span>
+        </div>
+      </aside>
+    </section>
 
-    <main>
-        <section>
-            <h2>Who Am I?</h2>
-            <p> I am an undergraduate junior majoring in Electrical & Computer Engineering at UT Austin. 
-                I am passionate about exploring powerful applications of AI, Machine Learning, and Robotics across industries, from healthcare to autonomous driving. 
-                My focus is on applying these technologies to solve real-world challenges and enhance everyday life. 
-                Beyond my studies, I am committed to spreading the importance of STEM education and raising public awareness about its significance, aiming to inspire the next generation of innovators.</p>
+    <section class="section">
+      <div class="grid two">
+        <article class="card">
+          <h2>Education</h2>
+          <p><strong>B.S. Electrical and Computer Engineering</strong><br>The University of Texas at Austin - May 2027</p>
+          <ul class="detail-list">
+            <li>University Honors and Dean's List</li>
+            <li>GPA: 4.000</li>
+            <li>Coursework: Data Structures and Algorithms, Software Engineering, Operating Systems, Computer Architecture, Discrete Math, Linear Algebra, Statistics, Data Science Principles, and Software Design for Intelligent Systems</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>What I Am Optimizing For</h2>
+          <p>
+            I am preparing for competitive full-time new grad recruiting in August 2026 for roles at companies building advanced compute, AI products, autonomy, robotics, trading systems, and developer infrastructure.
+          </p>
+          <ul class="detail-list">
+            <li>Deep technical ownership with measurable outcomes</li>
+            <li>Projects that show engineering taste, reliability, and clarity</li>
+            <li>Research-backed work that still ships in practical environments</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-            <h2>Hobbies and Interests</h2>
-            <p>During my free time, I love lifting weights at the gym to 
-                be physically fit. I also love travelling to explore new places 
-                around the world!
-            </p>
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Certifications</p>
+          <h2>Continual learning across AI, cloud, and software.</h2>
+        </div>
+      </div>
+      <ul class="quick-list">
+        <li>DeepLearning.AI and AWS Generative AI with LLMs</li>
+        <li>Microsoft Azure AI Fundamentals</li>
+        <li>Google AI Essentials</li>
+        <li>Mobile Application Development - University of Waterloo</li>
+        <li>Java Programming - University of Waterloo</li>
+        <li>Cisco IT Essentials</li>
+      </ul>
+    </section>
+  </main>
 
-
-           
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Sai Peram</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <span>&copy; 2026 Sai Peram</span>
+      <span>Austin, TX - sai11.peram@gmail.com</span>
+    </div>
+  </footer>
 </body>
 </html>
